@@ -20,11 +20,12 @@
     margin-top: 1.5vh;
     margin-bottom: 3vh;
 }
-.main-block {
+.center-grid {
     background-color: #EADEDA;
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 1.62fr;
+    position: relative;
 }
 .left-panel {
     display: flex;
@@ -80,12 +81,18 @@
     align-items: center;
     justify-content: center;
 }
+.main-block {
+    position: relative;
+    top: 0%;
+    left: 0%;
+}
 .background {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-    height: 80%
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 10vh;
+    height: 10vh;
+    z-index: -1;
 }
 .btn-container {
     width: 100%;
